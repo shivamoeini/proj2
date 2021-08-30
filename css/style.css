@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "IRANSans";
+  src: url("../font/IRANSansWeb.eot");
+  src: url("../font/IRANSansWeb.eot") format("embedded-opentype"),
+    url("../font/IRANSansWeb.woff2") format("woff2"),
+    url("../font/IRANSansWeb.woff") format("woff"),
+    url("../font/IRANSansWeb.ttf") format("truetype");
+}
+body {
+  font-family: "IRANSans" !important;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.5)),url("../img/img_4.jpg");
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:90vh;
+}
+.input{
+height:50px;
+}
+.boh{
+    padding-right: 14px;
+    border-right:8px solid rgb(12, 168, 72) ;
+}
+.cart:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.card-body .colo {
+  text-decoration: none;
+ 
+}
+
+.beshtar{
+   text-decoration: none;
+   color: #000;
+}
+.beshtar:hover{
+  color: blue;
+}
+.parent{
+  display: flex;
+  justify-content: space-between;
+}
+.con{
+  background-image: linear-gradient(rgba(58, 60, 75, 0.9) ,rgb(57, 59, 74,0.9)),url("../img/lllll.jpg");
+  background-size: cover;
+  height: 110vh;
+}
+.bor{
+  border-radius: 15px;
+}
+.footerlink{
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+}
+.bim{
+  color: rgb(17, 17, 78);
+}
