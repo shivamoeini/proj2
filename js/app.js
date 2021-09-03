@@ -44,7 +44,7 @@ function submitform(e) {
     // make secend gif
 
     const sendEmailImg = document.createElement("img")
-    sendEmailImg.src = "../img/mail.gif"
+    sendEmailImg.src = "img/mail.gif"
     sendEmailImg.style.display = "block"
 
     //  show the email send image
