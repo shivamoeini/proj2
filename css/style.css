@@ -8,8 +8,9 @@
 }
 body {
   font-family: "IRANSans" !important;
+  position: relative;
 }
-header{
+.header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.5)),url("../img/img_4.jpg");
     color: white;
     background-size: cover;
@@ -45,6 +46,10 @@ height:50px;
   display: flex;
   justify-content: space-between;
 }
+.parentt{
+  display: flex;
+  justify-content: space-between;
+}
 .con{
   background-image: linear-gradient(rgba(58, 60, 75, 0.9) ,rgb(57, 59, 74,0.9)),url("../img/lllll.jpg");
   background-size: cover;
@@ -59,4 +64,34 @@ height:50px;
 }
 .bim{
   color: rgb(17, 17, 78);
+}
+
+.colt{
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: rgb(250, 242, 242);
+}
+.cl:hover{
+  transform: scale(0.9);
+  transition: 0.6s;
+}
+a{
+  text-decoration: none;
+  
+}
+.fs-2{
+  color: rgb(180, 179, 179);
+}
+.w-75{
+  border-bottom: 3px solid white;
+  height: 35px;
+}
+.footerlink{
+  color: rgb(219, 240, 240);
+}
+.nav{
+   position: sticky;
+   background-color: white;
+  top: 0;
+  z-index: 1;
 }
