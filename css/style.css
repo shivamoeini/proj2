@@ -95,3 +95,8 @@ a{
   top: 0;
   z-index: 1;
 }
+#loaders img {
+  width: 150px;
+  margin: 0 auto;
+  display: none;
+}

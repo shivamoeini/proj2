@@ -366,7 +366,7 @@
                             <p class="card-text">آموزش، هدف اصلی کدیاد همینه! کدیاد پلتفرمیه که پایه و اساسش آموزش
                                 برنامه‌نویسی هستش ولی شما به‌غیر از آموزش برنامه‌نویسی در کدیاد میتونید دیجیتال
                                 مارکتینگ، طراحی، و... رو هم یاد بگیرید!</p>
-                                <a href="">مشاهده دوره‌ها<i class="bi bi-arrow-return-left"></i></a>
+                            <a href="">مشاهده دوره‌ها<i class="bi bi-arrow-return-left"></i></a>
 
                         </div>
 
@@ -386,7 +386,7 @@
                             <p class="card-text">آموزش، هدف اصلی کدیاد همینه! کدیاد پلتفرمیه که پایه و اساسش آموزش
                                 برنامه‌نویسی هستش ولی شما به‌غیر از آموزش برنامه‌نویسی در کدیاد میتونید دیجیتال
                                 مارکتینگ، طراحی، و... رو هم یاد بگیرید!</p>
-                                <a href="">مشاهده دوره‌ها<i class="bi bi-arrow-return-left"></i></a>
+                            <a href="">مشاهده دوره‌ها<i class="bi bi-arrow-return-left"></i></a>
                         </div>
 
                     </div>
@@ -428,21 +428,25 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-5">
-                    <form>
+                    <form id="email-form">
                         <div>
                             <label class="form-label">ایمیل</label>
-                            <input type="email" class="form-control">
+                            <input id="email" type="email" class="form-control">
                         </div>
                         <div>
                             <label class="form-label mt-3">موضوع</label>
-                            <input type="email" class="form-control">
+                            <input   id="subject"  type="text" class="form-control">
                         </div>
                         <div class="">
                             <label class="form-label mt-3">متن پیام </label>
-                            <textarea class="form-control"></textarea>
-                        </div>
+                            <textarea id="message"  class="form-control"></textarea>
 
-                        <button type="submit" class="btn btn-primary mt-3">ارسال </button>
+                        </div>
+                        <div class="row" id="loaders">
+                            <img id="spinner" src="img/spinner.gif" width="150">
+                        </div>
+                        <button id="resetBtn" type="submit" class="btn btn-primary mt-3"><i class="bi bi-archive"></i>    </button>
+                        <button id="sendBtn" type="submit" class="btn btn-primary mt-3"> ارسال پیام </button>
                     </form>
                 </div>
                 <div class="col-md-5 offset-md-2">
@@ -468,14 +472,14 @@
                 <div class="col-md-7 ">
                     <h3 class="fw-bold">Webshiva.io</h3>
                     <p></p>شما میتوانید با استفاده از یکی از راه‌های زیر با ما ارتباط برقرار کنید</p>
-                 <a href="" ><i class="bi bi-instagram fs-2"></i></a>   
-                  <a href=""><i class="bi bi-telegram fs-2 mx-3"></i></a>  
-                  <a href=""> <i class="bi bi-facebook fs-2 me-3"></i></a> 
-                  <a href=""><i class="bi bi-linkedin fs-2"></i></a>  
-                   <a href=""> <i class="bi bi-twitter fs-2 mx-3"></i></a>
-                  <a href=""><i class="bi bi-github fs-2 me-3"></i></a>  
-                <a href=""></a>    <i class="bi bi-envelope fs-2 "></i>
-                    
+                    <a href=""><i class="bi bi-instagram fs-2"></i></a>
+                    <a href=""><i class="bi bi-telegram fs-2 mx-3"></i></a>
+                    <a href=""> <i class="bi bi-facebook fs-2 me-3"></i></a>
+                    <a href=""><i class="bi bi-linkedin fs-2"></i></a>
+                    <a href=""> <i class="bi bi-twitter fs-2 mx-3"></i></a>
+                    <a href=""><i class="bi bi-github fs-2 me-3"></i></a>
+                    <a href=""></a> <i class="bi bi-envelope fs-2 "></i>
+
                 </div>
                 <div class="col-md-4 ">
                     <div class="row">
@@ -485,7 +489,7 @@
                                 <li>
                                     <a class="footerlink" href="#">صفحه اصلی</a>
                                 </li>
-                               
+
                                 <li>
                                     <a class="footerlink href=" #">گالری</a>
                                 </li>
@@ -495,7 +499,7 @@
 
                             </ul>
                         </div>
-                       
+
                         <div class="col-md-4">
                             <h6 class="fw-bold footer_header w-75 ">درباره ما</h6>
                             <ul class="list-unstyled">
@@ -511,9 +515,10 @@
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <p>کليه حقوق محصولات و محتوای اين سایت متعلق به Webshiva.io می باشد و هر گونه کپی برداری از محتوا و محصولات سایت غیر مجاز و بدون رضایت ماست</p>
+                    <p>کليه حقوق محصولات و محتوای اين سایت متعلق به Webshiva.io می باشد و هر گونه کپی برداری از محتوا و
+                        محصولات سایت غیر مجاز و بدون رضایت ماست</p>
                 </div>
-               
+
             </div>
             <a href="#" style="font-size: 50px;"><i class="bi bi-arrow-up-circle-fill"></i></a>
         </div>
@@ -525,7 +530,7 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
         </script>
     <script src="./icon/all.min.js"></script>
-
+<script src="./js/app.js"></script>
 </body>
 
 </html>
